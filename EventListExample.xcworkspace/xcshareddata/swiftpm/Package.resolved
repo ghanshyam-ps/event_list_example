@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Boundaries",
+        "repositoryURL": "https://github.com/frankvalbuena/Boundaries",
+        "state": {
+          "branch": null,
+          "revision": "06ed3838b91c7fc28ce11ace04fff7805174b95e",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

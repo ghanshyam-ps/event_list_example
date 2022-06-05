@@ -1,0 +1,6 @@
+framework module Pods_EventListExample_EventListExampleUITests {
+  umbrella header "Pods-EventListExample-EventListExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
