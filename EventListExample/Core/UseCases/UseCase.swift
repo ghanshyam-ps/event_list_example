@@ -32,4 +32,8 @@ final class UseCase: Boundary {
             )
         )
     }
+    
+    var getEventDetails: InputPort<GetEventDetailUseCase> {
+        return makeInputPort(implementation: GetEventDetailImp(repository: self.dependencies.repository))
+    }
 }

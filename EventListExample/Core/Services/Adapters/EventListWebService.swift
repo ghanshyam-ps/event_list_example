@@ -37,9 +37,18 @@ final class EventListWebService: EventListService {
                     
                     let eventModel = eventData.map { event -> EventData in
                         let eventId = event["id"] as? Int ?? 0
+                        let venue = event["venue"] as? [String:Any] ?? [String:Any]()
+                        let performers = event["performers"] as? [[String:Any]] ?? [[String:Any]]()
+                        var image = ""
+                        if !performers.isEmpty {
+                            image = performers.first?["image"] as? String ?? ""
+                        }
                         return EventData(
                             id: String(eventId),
-                            title: event["short_title"] as? String ?? ""
+                            title: event["short_title"] as? String ?? "",
+                            image: image,
+                            name: venue["name_v2"] as? String ?? "",
+                            datetime: event["datetime_local"] as? String ?? ""
                         )
                     }
                     
@@ -60,7 +69,15 @@ final class EventListWebService: EventListService {
 
 private extension EventListWebService {
     static func parse(response: NSDictionary) -> [EventDataModel]? {
-        return [EventData(id: "0", title: "")]
+        return [
+            EventData(
+                id: "",
+                title: "",
+                image: "",
+                name: "",
+                datetime: ""
+            )
+        ]
     }
 }
 

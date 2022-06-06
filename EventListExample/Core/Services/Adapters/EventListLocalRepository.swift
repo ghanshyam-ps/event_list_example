@@ -19,6 +19,10 @@ class EventListLocalRepository: EventRepository {
         return AnyCollection(_events)
     }
     
+    func findEvent(eventId: String) -> EventDataModel? {
+        return allEvents[eventId]
+    }
+    
     func save(events: [EventDataModel], completion: @escaping (SaveStatus) -> Void) {
         events.forEach { allEvents[$0.id] = $0 }
         lastSyncDate = Date()

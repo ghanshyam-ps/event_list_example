@@ -22,11 +22,24 @@ final class View: Boundary {
             return EventListVC(
                 listViewModel: self.dependencies.eventListViewModel,
                 syncEventListViewModel: self.dependencies.eventsSyncViewModel,
+                eventDetails: self.eventDetailsViewController,
                 coder: coder
             )
             
         }
         return makeInputPort(implementation: UINavigationController(rootViewController: eventListVC))
+    }
+    
+    typealias EventDetails = Factory<String, UIViewController?>
+    var eventDetailsViewController : EventDetails {
+        return EventDetails { [weak self] (details) -> UIViewController in
+            guard let self = self else { fatalError("Component must be retained") }
+            let viewModel = self.dependencies.eventDetailsViewModel(configuration: details)
+            let detailsVC = self.instantiateViewController { (coder) -> EventDetailVC? in
+                EventDetailVC(viewModel: viewModel, coder: coder)
+            }
+            return UINavigationController(rootViewController: detailsVC)
+        }
     }
     
 }

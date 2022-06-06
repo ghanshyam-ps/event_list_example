@@ -7,7 +7,7 @@ target 'EventListExample' do
     pod 'AlamofireImage', '~> 4.1'
     pod 'OHHTTPStubs'
     pod 'OHHTTPStubs/Swift'
-    
+    pod 'SDWebImage'
     
   target 'EventListExampleTests' do
     inherit! :search_paths

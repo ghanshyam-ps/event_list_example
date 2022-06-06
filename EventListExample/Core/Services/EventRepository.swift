@@ -16,5 +16,6 @@ protocol EventRepository {
     var lastSyncDate: Date? { get }
     func listAllEvents() -> AnyCollection<EventDataModel>
     func save(events: [EventDataModel], completion: @escaping (SaveStatus) -> Void)
+    func findEvent(eventId: String) -> EventDataModel?
     func removeAllEvents()
 }

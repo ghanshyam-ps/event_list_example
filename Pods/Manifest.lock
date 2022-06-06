@@ -20,6 +20,9 @@ PODS:
   - OHHTTPStubs/OHPathHelpers (9.1.0)
   - OHHTTPStubs/Swift (9.1.0):
     - OHHTTPStubs/Default
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
 
 DEPENDENCIES:
   - Alamofire (~> 5.1)
@@ -27,6 +30,7 @@ DEPENDENCIES:
   - MagicalRecord
   - OHHTTPStubs
   - OHHTTPStubs/Swift
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
@@ -34,13 +38,15 @@ SPEC REPOS:
     - AlamofireImage
     - MagicalRecord
     - OHHTTPStubs
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
 
-PODFILE CHECKSUM: 8762a41b674303b6f74862f9ca79af9434695314
+PODFILE CHECKSUM: 42dfe7855c454c1fd2c5ac22654b364c78c9a13f
 
 COCOAPODS: 1.11.3

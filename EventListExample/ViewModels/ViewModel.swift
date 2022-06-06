@@ -28,5 +28,16 @@ final class ViewModel: Boundary {
             )
         )
     }
+    
+    
+    var eventDetailsViewModel: InputPort<Factory<String, EventDetailViewModel>> {
+        return makeInputPort(implementation: .init(construction: { [weak self] (eventId) -> EventDetailViewModel in
+            guard let self = self else {
+                fatalError("The component must be retained")
+            }
+            return EventDetailViewModel(eventId: eventId, getEventDetailUseCase: self.dependencies.getEventDetails )
+        })
+        )
+    }
 }
 

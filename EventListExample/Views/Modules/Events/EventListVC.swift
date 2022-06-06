@@ -15,14 +15,17 @@ class EventListVC: UIViewController {
     
     fileprivate let eventListViewModel: EventListViewModel
     fileprivate let syncEventListViewModel: SyncEventListViewModel
+    fileprivate let eventDetails: View.EventDetails
     
     init?(
         listViewModel: EventListViewModel,
         syncEventListViewModel: SyncEventListViewModel,
+        eventDetails : View.EventDetails,
         coder: NSCoder
     ) {
         self.eventListViewModel = listViewModel
         self.syncEventListViewModel = syncEventListViewModel
+        self.eventDetails = eventDetails
         super.init(coder: coder)
     }
     
@@ -97,11 +100,15 @@ extension EventListVC: EventListViewDelegate {
     
     func configure(cell: EventListCell, atIndex index: Int) {
         let event = events(atIndex: index)
-        cell.lblTitle?.text = event.name
+        cell.setupUI(event: event)
     }
     
     func didSelect(cell: EventListCell, atIndex index: Int) {
-    
+        
+        guard let details = self.eventDetails(configuration: events(atIndex: index).id) else {
+            return
+        }
+        present(details, animated: true, completion: nil)
     }
     
     private func events(atIndex index: Int) -> EventListCellViewModel {
