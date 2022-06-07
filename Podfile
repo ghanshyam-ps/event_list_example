@@ -14,6 +14,7 @@ target 'EventListExample' do
   end
 
   target 'EventListExampleUITests' do
+    inherit! :search_paths
   end
 end
 

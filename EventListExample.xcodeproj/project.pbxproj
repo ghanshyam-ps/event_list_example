@@ -18,6 +18,49 @@
 		9A8F28C6284DB93700F97F88 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28C5284DB93700F97F88 /* EventDetailViewModel.swift */; };
 		9A8F28C8284DBBF400F97F88 /* GetEventDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28C7284DBBF400F97F88 /* GetEventDetailUseCase.swift */; };
 		9A8F28CA284DBC2C00F97F88 /* GetEventDetailImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28C9284DBC2C00F97F88 /* GetEventDetailImp.swift */; };
+		9A8F28CF284DD5A500F97F88 /* MockEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28CE284DD5A500F97F88 /* MockEventRepository.swift */; };
+		9A8F28D2284DD6B700F97F88 /* MockEventListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28D1284DD6B700F97F88 /* MockEventListService.swift */; };
+		9A8F28D6284DD9D000F97F88 /* EventRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28D5284DD9D000F97F88 /* EventRepositoryTest.swift */; };
+		9A8F28D9284DDD0500F97F88 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CAE284BB40A003762F6 /* EventData.swift */; };
+		9A8F28DA284DDD0900F97F88 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CAF284BB40A003762F6 /* Entity.swift */; };
+		9A8F28DB284DDD0F00F97F88 /* SyncEventListImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CD1284BD359003762F6 /* SyncEventListImp.swift */; };
+		9A8F28DC284DDD0F00F97F88 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CA6284BB40A003762F6 /* UseCase.swift */; };
+		9A8F28DD284DDD0F00F97F88 /* GetEventDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28C7284DBBF400F97F88 /* GetEventDetailUseCase.swift */; };
+		9A8F28DE284DDD0F00F97F88 /* GetEventDetailImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28C9284DBC2C00F97F88 /* GetEventDetailImp.swift */; };
+		9A8F28DF284DDD0F00F97F88 /* SyncEventListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CCF284BD325003762F6 /* SyncEventListUseCase.swift */; };
+		9A8F28E0284DDD0F00F97F88 /* EventListImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CCD284BD291003762F6 /* EventListImp.swift */; };
+		9A8F28E1284DDD0F00F97F88 /* EventListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CCB284BD236003762F6 /* EventListUseCase.swift */; };
+		9A8F28E3284DDD1D00F97F88 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C46284BA142003762F6 /* CoreData.xcdatamodeld */; };
+		9A8F28E5284DDD2400F97F88 /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CA9284BB40A003762F6 /* EventRepository.swift */; };
+		9A8F28E6284DDD2400F97F88 /* EventListWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CAB284BB40A003762F6 /* EventListWebService.swift */; };
+		9A8F28E7284DDD2400F97F88 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CA8284BB40A003762F6 /* Service.swift */; };
+		9A8F28E8284DDD2400F97F88 /* EventListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CAC284BB40A003762F6 /* EventListService.swift */; };
+		9A8F28E9284DDD2400F97F88 /* EventListLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CC8284BCE67003762F6 /* EventListLocalRepository.swift */; };
+		9A8F28EA284DDD2400F97F88 /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CC6284BCB36003762F6 /* CoreDataRepository.swift */; };
+		9A8F28EB284DDD2A00F97F88 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C78284BA467003762F6 /* ViewModel.swift */; };
+		9A8F28EC284DDD2A00F97F88 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28C5284DB93700F97F88 /* EventDetailViewModel.swift */; };
+		9A8F28ED284DDD2A00F97F88 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C8E284BAB29003762F6 /* EventListViewModel.swift */; };
+		9A8F28EE284DDD2A00F97F88 /* SyncEventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0AD0C3284C81C8009A80D0 /* SyncEventListViewModel.swift */; };
+		9A8F28EF284DDDA400F97F88 /* App.Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CB9284BB427003762F6 /* App.Theme.swift */; };
+		9A8F28F0284DDDA400F97F88 /* App.Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CBA284BB427003762F6 /* App.Image.swift */; };
+		9A8F28F1284DDDA400F97F88 /* App.String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CB8284BB427003762F6 /* App.String.swift */; };
+		9A8F28F2284DDDA400F97F88 /* App.Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CBB284BB427003762F6 /* App.Key.swift */; };
+		9A8F28F3284DDDA400F97F88 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CBC284BB427003762F6 /* App.swift */; };
+		9A8F28F4284DDDBB00F97F88 /* EventListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0AD0BD284C7196009A80D0 /* EventListCell.swift */; };
+		9A8F28F5284DDDC000F97F88 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C86284BA9B2003762F6 /* EventListView.swift */; };
+		9A8F28F6284DDDC400F97F88 /* AppBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C73284BA3FA003762F6 /* AppBoundary.swift */; };
+		9A8F28F7284DDDDF00F97F88 /* UITableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0AD0C1284C79E1009A80D0 /* UITableVIewCell.swift */; };
+		9A8F28F8284DDDDF00F97F88 /* AnyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45B88F284C9616002F6D03 /* AnyCollection.swift */; };
+		9A8F28F9284DDDDF00F97F88 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0CC3284BBFBC003762F6 /* Color.swift */; };
+		9A8F28FA284DDE8500F97F88 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C7A284BA5B8003762F6 /* View.swift */; };
+		9A8F28FB284DDEA500F97F88 /* EventListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A0AD0BE284C7196009A80D0 /* EventListCell.xib */; };
+		9A8F28FC284DDEA500F97F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C3D284BA141003762F6 /* AppDelegate.swift */; };
+		9A8F28FD284DDEA500F97F88 /* EventTableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C88284BA9D5003762F6 /* EventTableListView.swift */; };
+		9A8F28FE284DDEAB00F97F88 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F28C3284DB91400F97F88 /* EventDetailVC.swift */; };
+		9A8F28FF284DDEAF00F97F88 /* EventListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C8C284BAA4E003762F6 /* EventListVC.swift */; };
+		9A8F2901284DE03900F97F88 /* GetEventDetailUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2900284DE03900F97F88 /* GetEventDetailUseCaseTest.swift */; };
+		9A8F2903284F28D100F97F88 /* EventListUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2902284F28D100F97F88 /* EventListUseCaseTest.swift */; };
+		9A8F2905284F2A3000F97F88 /* SyncEventListUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2904284F2A3000F97F88 /* SyncEventListUseCaseTest.swift */; };
 		9ADC0C3E284BA141003762F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C3D284BA141003762F6 /* AppDelegate.swift */; };
 		9ADC0C40284BA142003762F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC0C3F284BA142003762F6 /* SceneDelegate.swift */; };
 		9ADC0C45284BA142003762F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC0C43284BA142003762F6 /* Main.storyboard */; };
@@ -90,6 +133,12 @@
 		9A8F28C5284DB93700F97F88 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
 		9A8F28C7284DBBF400F97F88 /* GetEventDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventDetailUseCase.swift; sourceTree = "<group>"; };
 		9A8F28C9284DBC2C00F97F88 /* GetEventDetailImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventDetailImp.swift; sourceTree = "<group>"; };
+		9A8F28CE284DD5A500F97F88 /* MockEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEventRepository.swift; sourceTree = "<group>"; };
+		9A8F28D1284DD6B700F97F88 /* MockEventListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEventListService.swift; sourceTree = "<group>"; };
+		9A8F28D5284DD9D000F97F88 /* EventRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepositoryTest.swift; sourceTree = "<group>"; };
+		9A8F2900284DE03900F97F88 /* GetEventDetailUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventDetailUseCaseTest.swift; sourceTree = "<group>"; };
+		9A8F2902284F28D100F97F88 /* EventListUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListUseCaseTest.swift; sourceTree = "<group>"; };
+		9A8F2904284F2A3000F97F88 /* SyncEventListUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncEventListUseCaseTest.swift; sourceTree = "<group>"; };
 		9ADC0C3A284BA141003762F6 /* EventListExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventListExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADC0C3D284BA141003762F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ADC0C3F284BA142003762F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +230,33 @@
 			path = EventDetail;
 			sourceTree = "<group>";
 		};
+		9A8F28CB284DD54900F97F88 /* MockObjects */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F28CE284DD5A500F97F88 /* MockEventRepository.swift */,
+				9A8F28D1284DD6B700F97F88 /* MockEventListService.swift */,
+			);
+			path = MockObjects;
+			sourceTree = "<group>";
+		};
+		9A8F28CC284DD55500F97F88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F28D5284DD9D000F97F88 /* EventRepositoryTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9A8F28CD284DD56700F97F88 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F2900284DE03900F97F88 /* GetEventDetailUseCaseTest.swift */,
+				9A8F2902284F28D100F97F88 /* EventListUseCaseTest.swift */,
+				9A8F2904284F2A3000F97F88 /* SyncEventListUseCaseTest.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		9ADC0C31284BA141003762F6 = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +301,9 @@
 		9ADC0C56284BA143003762F6 /* EventListExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				9A8F28CB284DD54900F97F88 /* MockObjects */,
+				9A8F28CC284DD55500F97F88 /* Services */,
+				9A8F28CD284DD56700F97F88 /* UseCases */,
 				9ADC0C57284BA143003762F6 /* EventListExampleTests.swift */,
 			);
 			path = EventListExampleTests;
@@ -520,6 +599,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8F28FB284DDEA500F97F88 /* EventListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,7 +764,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8F28E8284DDD2400F97F88 /* EventListService.swift in Sources */,
+				9A8F28D9284DDD0500F97F88 /* EventData.swift in Sources */,
+				9A8F28E6284DDD2400F97F88 /* EventListWebService.swift in Sources */,
+				9A8F28FE284DDEAB00F97F88 /* EventDetailVC.swift in Sources */,
+				9A8F28F3284DDDA400F97F88 /* App.swift in Sources */,
+				9A8F28CF284DD5A500F97F88 /* MockEventRepository.swift in Sources */,
+				9A8F28F2284DDDA400F97F88 /* App.Key.swift in Sources */,
 				9ADC0C58284BA143003762F6 /* EventListExampleTests.swift in Sources */,
+				9A8F28D2284DD6B700F97F88 /* MockEventListService.swift in Sources */,
+				9A8F28EE284DDD2A00F97F88 /* SyncEventListViewModel.swift in Sources */,
+				9A8F2905284F2A3000F97F88 /* SyncEventListUseCaseTest.swift in Sources */,
+				9A8F28EC284DDD2A00F97F88 /* EventDetailViewModel.swift in Sources */,
+				9A8F28FD284DDEA500F97F88 /* EventTableListView.swift in Sources */,
+				9A8F28E5284DDD2400F97F88 /* EventRepository.swift in Sources */,
+				9A8F28E0284DDD0F00F97F88 /* EventListImp.swift in Sources */,
+				9A8F28DC284DDD0F00F97F88 /* UseCase.swift in Sources */,
+				9A8F28FC284DDEA500F97F88 /* AppDelegate.swift in Sources */,
+				9A8F28DB284DDD0F00F97F88 /* SyncEventListImp.swift in Sources */,
+				9A8F28F7284DDDDF00F97F88 /* UITableVIewCell.swift in Sources */,
+				9A8F28EA284DDD2400F97F88 /* CoreDataRepository.swift in Sources */,
+				9A8F28FF284DDEAF00F97F88 /* EventListVC.swift in Sources */,
+				9A8F28E9284DDD2400F97F88 /* EventListLocalRepository.swift in Sources */,
+				9A8F28F5284DDDC000F97F88 /* EventListView.swift in Sources */,
+				9A8F2901284DE03900F97F88 /* GetEventDetailUseCaseTest.swift in Sources */,
+				9A8F28F6284DDDC400F97F88 /* AppBoundary.swift in Sources */,
+				9A8F28DD284DDD0F00F97F88 /* GetEventDetailUseCase.swift in Sources */,
+				9A8F28EB284DDD2A00F97F88 /* ViewModel.swift in Sources */,
+				9A8F28F0284DDDA400F97F88 /* App.Image.swift in Sources */,
+				9A8F28DF284DDD0F00F97F88 /* SyncEventListUseCase.swift in Sources */,
+				9A8F28F9284DDDDF00F97F88 /* Color.swift in Sources */,
+				9A8F28F1284DDDA400F97F88 /* App.String.swift in Sources */,
+				9A8F2903284F28D100F97F88 /* EventListUseCaseTest.swift in Sources */,
+				9A8F28ED284DDD2A00F97F88 /* EventListViewModel.swift in Sources */,
+				9A8F28E7284DDD2400F97F88 /* Service.swift in Sources */,
+				9A8F28EF284DDDA400F97F88 /* App.Theme.swift in Sources */,
+				9A8F28E1284DDD0F00F97F88 /* EventListUseCase.swift in Sources */,
+				9A8F28E3284DDD1D00F97F88 /* CoreData.xcdatamodeld in Sources */,
+				9A8F28DA284DDD0900F97F88 /* Entity.swift in Sources */,
+				9A8F28F8284DDDDF00F97F88 /* AnyCollection.swift in Sources */,
+				9A8F28FA284DDE8500F97F88 /* View.swift in Sources */,
+				9A8F28D6284DD9D000F97F88 /* EventRepositoryTest.swift in Sources */,
+				9A8F28F4284DDDBB00F97F88 /* EventListCell.swift in Sources */,
+				9A8F28DE284DDD0F00F97F88 /* GetEventDetailImp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

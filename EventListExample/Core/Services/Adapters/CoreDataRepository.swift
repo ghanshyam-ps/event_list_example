@@ -36,9 +36,6 @@ final class CoreDataRepository: EventRepository {
         configureCoreDataStack()
     }
     
-    func listAllEvents() -> AnyCollection<EventDataModel> {
-        return AnyCollection((SyncEventEntity.mr_findAll() as! [SyncEventEntity]).map { $0 as EventDataModel })
-    }
     
     func save(events: [EventDataModel], completion: @escaping (SaveStatus) -> Void) {
         MagicalRecord.save({ (ctx) in
@@ -54,6 +51,10 @@ final class CoreDataRepository: EventRepository {
             self?.lastSyncDate = Date()
             completion(succeed ? .success : .failure)
         }
+    }
+    
+    func listAllEvents() -> AnyCollection<EventDataModel> {
+        return AnyCollection((SyncEventEntity.mr_findAll() as! [SyncEventEntity]).map { $0 as EventDataModel })
     }
     
     func findEvent(eventId: String) -> EventDataModel? {
